@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Mobile (up to 767px): 1 slide
             0: {
                 slidesPerView: 1,
-                spaceBetween: 15,
+                spaceBetween: 20,
                 speed: 300,
             },
             // Tablet (768px and up): 2 slides

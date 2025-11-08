@@ -2576,7 +2576,7 @@ header nav .nav_icons .mobile_menu_btn {
   padding: 40px !important;
 }
 .tours .swiper-wrapper {
-  padding: 10px 10px 15px !important;
+  padding: 10px 0px 15px !important;
 }
 .tours .tours_item .tour_img {
   width: 100%;
@@ -2739,6 +2739,17 @@ header nav .nav_icons .mobile_menu_btn {
   .tours .tours_left_img {
     width: 120px;
   }
+   .tours .tour_content .title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .tours .rate{
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  .tours .icon_box span{
+    font-size: 16px;
+  }
   /* .tours .swiper {
     padding: 0;
   }
@@ -2774,10 +2785,7 @@ header nav .nav_icons .mobile_menu_btn {
     gap: 8px;
     margin-bottom: 10px;
   }
-  .tours .tour_content .title {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
+ 
   .tours .rate {
     margin-bottom: 15px;
   }
@@ -2922,14 +2930,12 @@ header nav .nav_icons .mobile_menu_btn {
 .swiper-button-prev {
   left: calc(100% - 82px) !important;
 }
-@media (max-width: 500px) {
   .swiper-button-next,
   .swiper-button-prev {
     top: 28px !important;
     width: 35px !important;
     height: 35px !important;
   }
-}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 16px !important;
@@ -5871,14 +5877,14 @@ section.product-card-section {
   gap: 8px;
   color: #2b4b80;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin: 25px 0 14px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e6e8ec;
 }
 .faq-category .cat-icon {
   display: inline-flex;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   border-radius: 8px;
   background: var(--sand-color);
   align-items: center;
@@ -5894,7 +5900,7 @@ section.product-card-section {
 .faq-item {
   background: #fff;
   border: 1px solid #e6e8ec;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   overflow: hidden;
 }
@@ -6026,4 +6032,176 @@ section.product-card-section {
 }
 .faq-contact .wa-btn i {
   color: #fff;
+}
+/* Trust highlights below FAQ */
+.faq-trust {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e6e8ec;
+  padding-bottom: 30px;
+}
+
+.trust-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.trust-feature {
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease , border 180ms ease;
+}
+
+.trust-feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  border-color: var(--primary-color);
+}
+
+.trust-feature .feature-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--primary, #335c91);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.trust-feature .feature-title {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .trust-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-features {
+    grid-template-columns: 1fr;
+  }
+}
+/* Benefits section (Why Choose Egyptra) */
+.benefits-section {
+  padding: 32px 0 40px;
+  background: #f7f9fc;
+  position: relative;
+  z-index: 2;
+}
+
+.benefits-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.benefits-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a2b4a;
+  margin: 0 0 8px;
+}
+
+.benefits-subtitle {
+  color: #5f6b7a;
+  font-size: 15px;
+}
+
+.benefits-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.benefit-box {
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.benefit-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
+}
+
+.benefit-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edf0f5;
+  margin-bottom: 10px;
+}
+
+.benefit-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: var(--sand-color);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.benefit-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.benefit-features {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+.benefit-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #2a2a2a;
+  padding: 6px 0;
+}
+
+.benefit-features li i {
+  color: var(--primary, #335c91);
+  margin-top: 1px;
+}
+
+@media (max-width: 992px) {
+  .benefits-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .benefits-section {
+    padding: 24px 0 32px;
+  }
+  .benefits-title {
+    font-size: 22px;
+  }
+  .benefits-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
